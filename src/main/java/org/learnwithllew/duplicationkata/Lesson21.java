@@ -7,15 +7,27 @@ public class Lesson21 extends Song
     switch (style)
     {
       case 1 : {
-          singRefrain(names, true, "L", 0, "Hip Hip Hurray! For ");
+          singRefrain(names,
+                  true,
+                  "L",
+                  0,
+                  "Hip Hip Hurray! For ");
       }
       break;
       case 2 : {
-          singRefrain(names, true, "am", 1, "Say yeah! Say yo! Say ");
+          singRefrain(names,
+                  true,
+                  "am",
+                  1,
+                  "Say yeah! Say yo! Say ");
       }
       break;
       case 3 : {
-          singRefrain(names, false, "L", 0, "Hip Hip Hurray! For ");
+          singRefrain(names,
+                  false,
+                  "L",
+                  0,
+                  "Hip Hip Hurray! For ");
       }
       break;
     }
