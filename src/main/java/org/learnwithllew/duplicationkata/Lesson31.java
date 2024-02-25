@@ -1,5 +1,7 @@
 package org.learnwithllew.duplicationkata;
 
+import java.util.function.Function;
+
 public class Lesson31 extends Song
 {
   public void singSong(int style, String... names)
@@ -10,9 +12,11 @@ public class Lesson31 extends Song
         for (String name : names)
         {
           boolean checkName = true;
-          if (checkName && name.startsWith("L"))
+          Function<String, Boolean> nameCheck = name1 -> name1.startsWith("L");
+          if (checkName && nameCheck.apply(name))
           {
-            sing("Hip Hip Hurray! For " + name);
+            Function<String, String> specialGreetingFunc = name1 -> "Hip Hip Hurray! For " + name1;
+            sing(specialGreetingFunc.apply(name));
           }
           else
           {
@@ -24,9 +28,11 @@ public class Lesson31 extends Song
         for (String name : names)
         {
           boolean checkName = true;
-          if (checkName && name.contains("a"))
+          Function<String, Boolean> nameCheck = name1 -> name1.contains("a");
+          if (checkName && nameCheck.apply(name))
           {
-            sing(name.toUpperCase() + "! Yay " + name + "!");
+            Function<String, String> specialGreetingFunc = name1 -> name1.toUpperCase() + "! Yay " + name1 + "!";
+            sing(specialGreetingFunc.apply(name));
           }
           else
           {
@@ -38,9 +44,11 @@ public class Lesson31 extends Song
         for (String name : names)
         {
           boolean checkName = false;
-          if (checkName && name.startsWith("L"))
+          Function<String, Boolean> nameCheck = name1 -> name1.startsWith("L");
+          if (checkName && nameCheck.apply(name))
           {
-            sing("Hip Hip Hurray! For " + name);
+            Function<String, String> specialGreetingFunc = name1 -> "Hip Hip Hurray! For " + name1;
+            sing(specialGreetingFunc.apply(name));
           }
           else
           {
