@@ -8,7 +8,7 @@ public class Lesson21 extends Song
     {
       case 1 : {
           for (String name : names) {
-            if (name.startsWith("L", 0)) {
+            if (true && name.startsWith("L", 0)) {
               sing("Hip Hip Hurray! For " + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
@@ -18,7 +18,7 @@ public class Lesson21 extends Song
         break;
       case 2 : {
           for (String name : names) {
-            if (name.startsWith("am", 1)) {
+            if (true && name.startsWith("am", 1)) {
               sing("Say yeah! Say yo! Say " + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
