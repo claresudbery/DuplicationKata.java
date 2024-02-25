@@ -7,30 +7,15 @@ public class Lesson21 extends Song
     switch (style)
     {
       case 1 : {
-        boolean checkNameStart = true;
-        String namePrefix = "L";
-        String specialGreeting = "Hip Hip Hurray! For ";
-        int startOffset = 0;
-
-        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+          singRefrain(names, true, "L", 0, "Hip Hip Hurray! For ");
       }
       break;
       case 2 : {
-        boolean checkNameStart = true;
-        String namePrefix = "am";
-        String specialGreeting = "Say yeah! Say yo! Say ";
-        int startOffset = 1;
-
-        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+          singRefrain(names, true, "am", 1, "Say yeah! Say yo! Say ");
       }
       break;
       case 3 : {
-        boolean checkNameStart = false;
-        String namePrefix = "L";
-        String specialGreeting = "Hip Hip Hurray! For ";
-        int startOffset = 0;
-
-        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+          singRefrain(names, false, "L", 0, "Hip Hip Hurray! For ");
       }
       break;
     }
