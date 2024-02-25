@@ -28,7 +28,11 @@ public class Lesson21 extends Song
         break;
       case 3 : {
             for (String name : names) {
-              sing("Hello " + name + ", it's nice to meet you.");
+              if (false && name.startsWith("L", 0)) {
+                sing("Hip Hip Hurray! For " + name);
+              } else {
+                sing("Hello " + name + ", it's nice to meet you.");
+              }
             }
           }
         break;
