@@ -11,15 +11,9 @@ public class Lesson21 extends Song
           String namePrefix = "L";
           String specialGreeting = "Hip Hip Hurray! For ";
           int startOffset = 0;
-        
-          for (String name : names) {
-            if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
-              sing(specialGreeting + name);
-            } else {
-              sing("Hello " + name + ", it's nice to meet you.");
-            }
-          }
-        }
+
+        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+      }
         break;
       case 2 : {
           boolean checkNameStart = true;
@@ -27,14 +21,8 @@ public class Lesson21 extends Song
           String specialGreeting = "Say yeah! Say yo! Say ";
           int startOffset = 1;
 
-          for (String name : names) {
-            if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
-              sing(specialGreeting + name);
-            } else {
-              sing("Hello " + name + ", it's nice to meet you.");
-            }
-          }
-        }
+        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+      }
         break;
       case 3 : {
           boolean checkNameStart = false;
@@ -42,15 +30,19 @@ public class Lesson21 extends Song
           String specialGreeting = "Hip Hip Hurray! For ";
           int startOffset = 0;
 
-          for (String name : names) {
-            if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
-              sing(specialGreeting + name);
-            } else {
-              sing("Hello " + name + ", it's nice to meet you.");
-            }
-          }
-        }
+        singRefrain(names, checkNameStart, namePrefix, startOffset, specialGreeting);
+      }
         break;
+    }
+  }
+
+  private void singRefrain(String[] names, boolean checkNameStart, String namePrefix, int startOffset, String specialGreeting) {
+    for (String name : names) {
+      if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
+        sing(specialGreeting + name);
+      } else {
+        sing("Hello " + name + ", it's nice to meet you.");
+      }
     }
   }
 }
