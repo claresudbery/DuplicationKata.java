@@ -8,8 +8,11 @@ public class Lesson21 extends Song
     {
       case 1 : {
           for (String name : names) {
-            if (true && name.startsWith("L", 0)) {
-              sing("Hip Hip Hurray! For " + name);
+            boolean checkNameStart = true;
+            String namePrefix = "L";
+            String specialGreeting = "Hip Hip Hurray! For ";
+            if (checkNameStart && name.startsWith(namePrefix, 0)) {
+              sing(specialGreeting + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
             }
@@ -18,8 +21,11 @@ public class Lesson21 extends Song
         break;
       case 2 : {
           for (String name : names) {
-            if (true && name.startsWith("am", 1)) {
-              sing("Say yeah! Say yo! Say " + name);
+            boolean checkNameStart = true;
+            String namePrefix = "am";
+            String specialGreeting = "Say yeah! Say yo! Say ";
+            if (checkNameStart && name.startsWith(namePrefix, 1)) {
+              sing(specialGreeting + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
             }
@@ -28,8 +34,11 @@ public class Lesson21 extends Song
         break;
       case 3 : {
             for (String name : names) {
-              if (false && name.startsWith("L", 0)) {
-                sing("Hip Hip Hurray! For " + name);
+              boolean checkNameStart = false;
+              String namePrefix = "L";
+              String specialGreeting = "Hip Hip Hurray! For ";
+              if (checkNameStart && name.startsWith(namePrefix, 0)) {
+                sing(specialGreeting + name);
               } else {
                 sing("Hello " + name + ", it's nice to meet you.");
               }
