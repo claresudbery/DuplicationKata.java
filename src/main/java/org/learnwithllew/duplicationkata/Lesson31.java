@@ -35,7 +35,14 @@ public class Lesson31 extends Song
       case 3 :
         for (String name : names)
         {
-          sing("Hello " + name + ", it's nice to meet you.");
+          if (false && name.startsWith("L"))
+          {
+            sing("Hip Hip Hurray! For " + name);
+          }
+          else
+          {
+            sing("Hello " + name + ", it's nice to meet you.");
+          }
         }
         break;
     }
