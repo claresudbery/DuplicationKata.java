@@ -6,37 +6,31 @@ public class Lesson21 extends Song
   {
     switch (style)
     {
-      case 1 :
-        for (String name : names)
-        {
-          if (name.startsWith("L", 0))
-          {
-            sing("Hip Hip Hurray! For " + name);
-          }
-          else
-          {
-            sing("Hello " + name + ", it's nice to meet you.");
+      case 1 : {
+          for (String name : names) {
+            if (name.startsWith("L", 0)) {
+              sing("Hip Hip Hurray! For " + name);
+            } else {
+              sing("Hello " + name + ", it's nice to meet you.");
+            }
           }
         }
         break;
-      case 2 :
-        for (String name : names)
-        {
-          if (name.startsWith("am", 1))
-          {
-            sing("Say yeah! Say yo! Say " + name);
-          }
-          else
-          {
-            sing("Hello " + name + ", it's nice to meet you.");
+      case 2 : {
+          for (String name : names) {
+            if (name.startsWith("am", 1)) {
+              sing("Say yeah! Say yo! Say " + name);
+            } else {
+              sing("Hello " + name + ", it's nice to meet you.");
+            }
           }
         }
         break;
-      case 3 :
-        for (String name : names)
-        {
-          sing("Hello " + name + ", it's nice to meet you.");
-        }
+      case 3 : {
+            for (String name : names) {
+              sing("Hello " + name + ", it's nice to meet you.");
+            }
+          }
         break;
     }
   }
