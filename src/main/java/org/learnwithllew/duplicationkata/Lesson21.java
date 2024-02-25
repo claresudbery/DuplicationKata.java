@@ -11,7 +11,8 @@ public class Lesson21 extends Song
             boolean checkNameStart = true;
             String namePrefix = "L";
             String specialGreeting = "Hip Hip Hurray! For ";
-            if (checkNameStart && name.startsWith(namePrefix, 0)) {
+            int startOffset = 0;
+            if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
               sing(specialGreeting + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
@@ -24,7 +25,8 @@ public class Lesson21 extends Song
             boolean checkNameStart = true;
             String namePrefix = "am";
             String specialGreeting = "Say yeah! Say yo! Say ";
-            if (checkNameStart && name.startsWith(namePrefix, 1)) {
+            int startOffset = 1;
+            if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
               sing(specialGreeting + name);
             } else {
               sing("Hello " + name + ", it's nice to meet you.");
@@ -37,7 +39,8 @@ public class Lesson21 extends Song
               boolean checkNameStart = false;
               String namePrefix = "L";
               String specialGreeting = "Hip Hip Hurray! For ";
-              if (checkNameStart && name.startsWith(namePrefix, 0)) {
+              int startOffset = 0;
+              if (checkNameStart && name.startsWith(namePrefix, startOffset)) {
                 sing(specialGreeting + name);
               } else {
                 sing("Hello " + name + ", it's nice to meet you.");
