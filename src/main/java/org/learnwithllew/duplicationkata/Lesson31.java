@@ -9,7 +9,8 @@ public class Lesson31 extends Song
       case 1 :
         for (String name : names)
         {
-          if (true && name.startsWith("L"))
+          boolean checkNameStart = true;
+          if (checkNameStart && name.startsWith("L"))
           {
             sing("Hip Hip Hurray! For " + name);
           }
@@ -22,7 +23,8 @@ public class Lesson31 extends Song
       case 2 :
         for (String name : names)
         {
-          if (true && name.contains("a"))
+          boolean checkNameStart = true;
+          if (checkNameStart && name.contains("a"))
           {
             sing(name.toUpperCase() + "! Yay " + name + "!");
           }
@@ -35,7 +37,8 @@ public class Lesson31 extends Song
       case 3 :
         for (String name : names)
         {
-          if (false && name.startsWith("L"))
+          boolean checkNameStart = false;
+          if (checkNameStart && name.startsWith("L"))
           {
             sing("Hip Hip Hurray! For " + name);
           }
